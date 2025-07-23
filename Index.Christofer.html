@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELITE REMOVALS</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <head>
+        <!-- Link do Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    
+    <style>
+        /* Galeria */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap; /* Permite quebrar a linha quando atingir o limite */
+            gap: 20px; /* Espaçamento entre as fotos */
+            justify-content: space-between; /* Distribui as fotos igualmente */
+        }
+
+        .foto-pair {
+            width: calc(33.33% - 20px); /* Cada foto ocupa 1/3 da largura da galeria */
+            box-sizing: border-box; /* Garante que o padding e o gap não afetem a largura total */
+            text-align: center; /* Centraliza o conteúdo */
+        }
+
+        .foto-pair img {
+            width: 100%; /* Faz a imagem ocupar toda a largura do container */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 8px; /* Opcional: borda arredondada */
+        }
+
+        textarea {
+            width: 100%; /* Faz a caixa de texto ocupar toda a largura do container */
+            margin-top: 20px; /* Espaço acima da caixa de texto */
+            font-family: Arial, sans-serif; /* Define a fonte como Arial (ou uma fonte alternativa caso Arial não esteja disponível) */
+            color: #33333300; /* Define a cor do texto como cinza escuro */
+            font-size: 16px; /* Define o tamanho da fonte como 16 pixels */
+        }
+
+        .banner {
+            display: flex;
+            justify-content: center;  /* Centraliza o conteúdo horizontalmente */
+            align-items: center;      /* Centraliza o conteúdo verticalmente */
+            height: 200px;            /* Ajuste a altura do banner */
+            text-align: center;       /* Centraliza o texto */
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;      /* Alinha o texto com as imagens */
+            justify-content: center;  /* Centraliza o texto horizontalmente */
+            gap: 20px;                /* Espaço entre o texto e as logomarcas */
+            margin: 0;
+        }
+
+        .logo {
+            height: 150px; /* Ajuste o tamanho das logomarcas conforme necessário */
+        }
+
+        .foto-pair img:hover {
+            transform: rotate(15deg); /* Rotaciona 15 graus ao passar o mouse */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #acc90b;
+        }
+
+        footer p {
+            margin: 0;
+        }
+        .h2{
+            background-size: red;
+        }
+        .carousel-item img {
+    width: 33.33%; /* Define a largura da imagem como um terço da largura da tela */
+    margin: 0 auto; /* Alinha as imagens ao centro */
+}
+
+<style>
+    .Videos {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .video-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .video-wrapper {
+        flex: 1 1 250px;
+        max-width: 300px;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 600px) {
+        .video-wrapper {
+            flex: 1 1 100%;
+            max-width: 100%;
+        }
+    }
+
+    .faixa-marrom {
+    height: 5px; /* altura da faixa */
+    background-color: brown; /* cor marrom */
+    width: 100%; /* ocupa toda a largura */
+}
+</style>
+    </style>
+    
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="banner">
+    <h1>
+        <img src="Fotos/Mudança 13.jpg" alt="Logomarca" class="logo esquerda">
+        BEM VINDO A ELITE!
+        <img src="Fotos/Mudança 13.jpg" alt="Logomarca" class="logo direita">
+    </h1>
+</div>
+
+<!-- Faixa marrom -->
+<div class="faixa-marrom"></div>
+
+         </header>
+         <body>
+            <style>
+                .carousel-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    margin: 40px;
+                }
+        
+                .text-boxes {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 500px; /* ajusta conforme a altura do carrossel */
+                    margin: 0 10px;
+                }
+        
+               
+        
+                .carousel-inner img {
+                    width: 600px; /* ajusta conforme necessário */
+                    height: auto;
+                }
+                .text-boxes a {
+    text-decoration: none;
+    color: rgb(76, 155, 151);
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;           /* Permite quebrar linha quando necessário */
+  justify-content: center;   /* Centraliza os vídeos */
+  gap: 20px;                 /* Espaçamento entre os vídeos */
+  padding: 20px;
+}
+
+.video-wrapper {
+  width: 100%;
+  max-width: 300px;          /* Largura máxima por vídeo */
+  box-sizing: border-box;
+}
+
+
+            </style>
+        
+            <div class="carousel-container">
+                <!-- Caixas do lado esquerdo -->
+                <div class="text-boxes">
+                    <a href="pagina1.html" class="text-box">ORÇAMENTO</a>
+                    <a href="pagina2.html" class="text-box">ORIENTAÇÕES</a>
+                    <a href="pagina3.html" class="text-box">HORÁRIOS</a>
+                    <a href="pagina4.html" class="text-box">CADASTRE AQUI!</a>
+                </div>
+        
+                <!-- Carrossel -->
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Fotos/Mudança 1.jpg" class="d-block" alt="Imagem 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Fotos/Mudança 2.jpg" class="d-block" alt="Imagem 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Fotos/Mudança 3 - Copia.jpg" class="d-block" alt="Imagem 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Fotos/Mudança 4.png" class="d-block" alt="Imagem 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Fotos/Mudança 5.jpg" class="d-block" alt="Imagem 5">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Fotos/Mudança 6.jpg" class="d-block" alt="Imagem 6">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        
+                <!-- Caixas do lado direito -->
+                <div class="text-boxes">
+                    <div class="text-box">NOSSOS PROFISSIONAIS</div>
+                    <div class="text-box">EMBALAGENS</div>
+                    <div class="text-box">DIFERENCIAL DA ELEITE</div>
+                    <div class="text-box">GARANTIAS</div>
+                </div>
+            </div>
+        </body>
+    </header>
+
+    <h2 style="background-color: lightblue; text-align: center;">
+        <strong>Nossa qualidade, ética e bom atendimento é inogociável.</strong>
+      </h2>
+
+    <!-- Galeria de Fotos -->
+    <section class="galeria">
+        <div class="foto-pair">
+            <img src="Fotos/Mudança 7.jpg" alt="Foto 9">
+            <textarea rows="3" placeholder="Com a dedicação respeitosos dos profissionais, seus bens recebem o melhor tratamento."></textarea>
+        </div>
+        
+        <div class="foto-pair">
+            <img src="Fotos/Mudança 7 -.png" alt="Foto 5">
+            <textarea rows="3" placeholder="Sua satisfação e tranquilidade é garantida, com um bom serviço e de forma rápida."></textarea>
+        </div>
+
+        <div class="foto-pair">
+            <img src="Fotos/Mudança 8.jpg" alt="Foto 4">
+            <textarea rows="3" placeholder="A Elite Remmovals traa a mudança de seus objetos e móveis, bem mais do que uma simples mudança, assistindo bemm sua família."></textarea>
+        </div>
+
+        <!-- Nova linha de fotos -->
+        <div class="foto-pair">
+            <img src="Fotos/Mudança 10.jpg" alt="Foto 6">
+            <textarea rows="3" placeholder="Nós fazemos de tudo para valorizar sua nova conquista, sempre influenciando positivamente na paz e sucesso."></textarea>
+        </div>
+
+        <div class="foto-pair">
+            <img src="Fotos/Mudança 11.jpg" alt="Foto 7">
+            <textarea rows="3" placeholder="A agilidade da ELITE faz com que o seu tempo e de sua família seja valorizado."></textarea>
+        </div>
+
+        <div class="foto-pair">
+            <img src="Fotos/Mudança 12.jpg" alt="Foto 8">
+            <textarea rows="3" placeholder="Atravéz de uma equipe coesa, preparada, será dispensado muito carrinho, atenção e paciência para seus desejos de mudança."></textarea>
+        </div> 
+    </section>
+
+   <h1 style="text-align: center; background-color: orange; padding: 10px; color: white;">
+  Confira as dicas do agente de mudança, Christofer
+</h1>
+
+    <div class="video-container">
+  <div class="video-wrapper"> 
+    <a href="https://www.youtube.com/watch?v=Q9SUoJtsR_Q" target="_blank">
+      <img src="https://img.youtube.com/vi/Q9SUoJtsR_Q/0.jpg" alt="Miniatura do vídeo" style="width:100%;">
+    </a>
+    <textarea rows="3" placeholder="Qualidade, além de tratarmos como obrigação, também é nossa missão."></textarea>
+  </div>
+
+  <div class="video-wrapper">
+    <a href="https://www.youtube.com/watch?v=Q9SUoJtsR_Q" target="_blank">
+      <img src="https://img.youtube.com/vi/Q9SUoJtsR_Q/0.jpg" alt="Miniatura do vídeo" style="width:100%;">
+    </a>
+    <textarea rows="3" placeholder="Quem faz o que gosta, faz com muito mais segurança e perfeição."></textarea>
+  </div>
+
+  <div class="video-wrapper">
+    <a href="https://www.youtube.com/watch?v=Q9SUoJtsR_Q" target="_blank">
+      <img src="https://img.youtube.com/vi/Q9SUoJtsR_Q/0.jpg" alt="Miniatura do vídeo" style="width:100%;">
+    </a>
+    <textarea rows="3" placeholder="Se precisar de um carreto de mudança, procure quem faz com alegria e respeito."></textarea>
+  </div>
+
+  <div class="video-wrapper">
+    <a href="https://www.youtube.com/watch?v=Q9SUoJtsR_Q" target="_blank">
+      <img src="https://img.youtube.com/vi/Q9SUoJtsR_Q/0.jpg" alt="Miniatura do vídeo" style="width:100%;">
+    </a>
+    <textarea rows="3" placeholder="Na ELITE REMALS está cada vez mais fácil e simples se mudar."></textarea>
+  </div>
+</div>
+    <p><center>MAIS INFORMAÇÕES:</center></p>
+    <p><center>Telefone: 0400700868</center></p>
+    
+   
+
+    <footer>
+        <p>2025 ELITE REMOVAIS. Todos os direitos reservados.</p>
+        <p>Programação: Marcos Alves Tolentino - (14)981652490 - Lins-SP-Brasil</p>
+    </footer>
+</body>
+</html>
